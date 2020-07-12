@@ -1,14 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
+
+const Styledli = styled.li`
+  color: red;
+`
+const Styledlink = styled(Link)`
+  color: red;
+`
 
 const Header = () => {
   return (
     <header>
       <nav>
         <ul>
-          <li>
-            <Link to="/">top</Link>
-          </li>
+          <Styledli>
+            <Styledlink to="/">top</Styledlink>
+          </Styledli>
           <li>
             <Link to="/about">about</Link>
           </li>
